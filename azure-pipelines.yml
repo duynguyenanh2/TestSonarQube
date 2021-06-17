@@ -14,9 +14,6 @@ steps:
   inputs:
     SonarQube: 'AzureSonar'
     scannerMode: 'CLI'
-    configMode: 'manual'
-    cliProjectKey: 'Java'
-    cliProjectName: 'JavaMaven'
-    cliSources: '.'
+    configMode: 'file'
 - task: SonarQubeAnalyze@4
 

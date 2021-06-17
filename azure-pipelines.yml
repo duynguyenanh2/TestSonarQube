@@ -10,5 +10,13 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: SonarQubePrepare@4
+  inputs:
+    SonarQube: 'AzureSonar'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'Java'
+    cliProjectName: 'JavaMaven'
+    cliSources: '.'
 - task: SonarQubeAnalyze@4
 

@@ -11,14 +11,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-
 - task: SonarQubePrepare@4
   inputs:
-    SonarQube: 'SonarAzure3'
     scannerMode: 'CLI'
-    configMode: 'manual'
-    cliProjectKey: 'Html'
-    cliSources: '.'
+    configMode: 'file'
 - task: SonarQubeAnalyze@4
 
 - task: SonarQubePublish@4

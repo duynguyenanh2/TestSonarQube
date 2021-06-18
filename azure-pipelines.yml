@@ -12,7 +12,7 @@ pool:
 steps:
 - task: SonarQubePrepare@4
   inputs:
-    SonarQube: 'AzureSonar2'
+    SonarQube: 'SonarAzure3'
     scannerMode: 'CLI'
     configMode: 'manual'
     cliProjectKey: 'Html'
